@@ -1,0 +1,222 @@
+/* Basic Reset and Body Styles */
+body {
+    background-color: #f4f9f7;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Layout Container */
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    overflow: auto; /* Clearfix for floats */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ffffff;
+    border-bottom: 4px solid #6b8e23;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin: 0 0 20px 0;
+    color: #6b8e23;
+    font-size: 32px;
+}
+
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 15px;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #6b8e23;
+    border-bottom: 2px solid #6b8e23;
+}
+
+/* Typography and Common Classes */
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+h2 {
+    color: #6b8e23;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Buttons */
+.btn {
+    background-color: #6b8e23;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #55701c;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-img {
+    margin: 0 auto 30px auto;
+    border-radius: 8px;
+}
+
+/* Float Layout Helpers (Alternative to Flex/Grid) */
+.col-half {
+    float: left;
+    width: 46%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+}
+
+.col-half.last {
+    margin-right: 0;
+}
+
+.col-third {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+/* About Page Lists */
+.goals-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.goals-list li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Resources Page */
+.emergency-box {
+    background-color: #ffebee;
+    border: 2px solid #ef9a9a;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.emergency-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #c62828;
+    display: block;
+    margin-top: 10px;
+}
+
+.download-link {
+    display: block;
+    background-color: #f4f9f7;
+    border: 1px solid #6b8e23;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.download-link:hover {
+    background-color: #6b8e23;
+    color: #fff;
+}
+
+/* Gallery */
+blockquote {
+    background-color: #f4f9f7;
+    border-left: 5px solid #6b8e23;
+    margin: 20px 0;
+    padding: 15px;
+    font-style: italic;
+    clear: both;
+}
+
+/* Contact Form */
+form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    clear: both;
+}

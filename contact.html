@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Bloom - Contact Us</title>
+    <style>
+        /* REPEATED BASIC STYLES */
+        :root {
+            --bg-color: #f4f9f7;
+            --text-color: #333333;
+            --accent-color: #6b8e23;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #e0eee0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Unique Styles for Contact Us */
+        .contact-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form select, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box; /* Include padding/border in the element's total width/height */
+            border-radius: 3px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #55771f;
+        }
+
+        .contact-info {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            border-top: 1px solid #cccccc;
+            font-size: 0.9em;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mind Bloom 🌿</h1>
+        <p>Nurturing Young Minds, Growing Community</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Get in Touch with Mind Bloom</h2>
+
+        <div class="contact-info">
+            <h3>General Information</h3>
+            <p><strong>Email:</strong> <a href="mailto:mubaruganda@gmail.com" style="color: var(--accent-color);">mubaruganda@gmail.com</a></p>
+            <p><strong>Mailing Address:</strong> Kampala Uganda</p>
+            <p>We typically respond to inquiries within 48 hours.</p>
+        </div>
+
+        <section>
+            <h3>Send Us a Message</h3>
+            
+            <form action="#" method="post" class="contact-form">
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Mind Bloom Campaign. All Rights Reserved.
+    </footer>
+</body>
+</html>

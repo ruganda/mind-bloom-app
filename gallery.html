@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Bloom - Gallery</title>
+    <style>
+        /* REPEATED BASIC STYLES */
+        :root {
+            --bg-color: #f4f9f7;
+            --text-color: #333333;
+            --accent-color: #6b8e23;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #e0eee0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Unique Styles for Gallery */
+        .image-box {
+            width: 30%; /* Approx three per row */
+            margin: 1.66%;
+            float: left; /* Simple layout using float */
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            min-height: 100px; /* Placeholder visualization */
+            background-color: #e9e9e9;
+        }
+
+        /* Clearfix to contain floats */
+        .gallery-row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .testimonial {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            background-color: white;
+            padding: 15px;
+            border-radius: 3px;
+        }
+
+        footer {
+            clear: both; /* Crucial for footers after floats */
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            border-top: 1px solid #cccccc;
+            font-size: 0.9em;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mind Bloom 🌿</h1>
+        <p>Nurturing Young Minds, Growing Community</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Our Community in Action</h2>
+
+        <section class="gallery-row">
+            <div class="image-box">
+                <img src="https://picsum.photos/300/200?random=1" alt="Mentoring session group">
+                <p style="text-align: center; margin-top: 5px; font-size: 0.9em;">Workshop: Building Resilience</p>
+            </div>
+            <div class="image-box">
+                <img src="https://picsum.photos/300/200?random=2" alt="Volunteers setting up a booth">
+                <p style="text-align: center; margin-top: 5px; font-size: 0.9em;">Community Outreach Event</p>
+            </div>
+            <div class="image-box">
+                <img src="https://picsum.photos/300/200?random=3" alt="A quiet space for reflection">
+                <p style="text-align: center; margin-top: 5px; font-size: 0.9em;">Quiet Reflection Space</p>
+            </div>
+        </section>
+
+        <section class="gallery-row" style="padding-top: 20px;">
+            <div class="image-box">
+                <img src="https://picsum.photos/300/200?random=4" alt="Group discussion circle">
+                <p style="text-align: center; margin-top: 5px; font-size: 0.9em;">Peer Support Group</p>
+            </div>
+            <div class="image-box">
+                <img src="https://picsum.photos/300/200?random=5" alt="Youth holding a Mind Bloom sign">
+                <p style="text-align: center; margin-top: 5px; font-size: 0.9em;">Campaign Sign</p>
+            </div>
+            <div class="image-box">
+                <img src="https://picsum.photos/300/200?random=6" alt="Online workshop participants">
+                <p style="text-align: center; margin-top: 5px; font-size: 0.9em;">Online Workshop</p>
+            </div>
+        </section>
+
+        <section style="clear: both; padding-top: 40px;">
+            <h3>Testimonials</h3>
+            
+            <blockquote class="testimonial">
+                <p>"Mind Bloom gave me the tools I needed to manage my school stress. The resources were easy to understand and the peer mentors genuinely cared."</p>
+                <p style="text-align: right; font-weight: bold;">- Anonymous Youth, Age 17</p>
+            </blockquote>
+
+            <blockquote class="testimonial">
+                <p>"I finally felt like I wasn't alone. The community here is supportive and non-judgmental. Thank you for creating this space."</p>
+                <p style="text-align: right; font-weight: bold;">- Anonymous Mentor, Age 21</p>
+            </blockquote>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Mind Bloom Campaign. All Rights Reserved.
+    </footer>
+</body>
+</html>
